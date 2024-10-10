@@ -1,36 +1,52 @@
 <!DOCTYPE html>
-<html>
- <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Calculations</title>
- </head>
-<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
 
-<h1>Subhani Shaik figures out</h1>
-<h4>Math Computations - Form</h4>
-<!-- creating form to fill data in fields -->
-<form>
-    <label for="firstNum">Enter a number:</label>
-    <input type="number" id="firstNum" value="2"><br><br>
-    <label for="secondNum">Enter a number:</label>
-    <input type="number" id="secondNum" value="12"><br><br>
-    <input type="button" onclick="powerSum()" value="Compute">
-</form>
+<div class="container mt-5">
+    <h1 class="text-center">Subhani Shaik Figures Out</h1>
+    <h4 class="text-center">Math Computations - Form</h4>
 
-<!-- Div for tagged element to display power of entered numbers -->
-<div><p id="formResult"></p></div>
-<h4>Math Computations - Radio button</h4>
-<form>
-    <label><input type="radio" name="operation" value="max" onclick="processRadio()"> Max</label><br>
-    <label><input type="radio" name="operation" value="min" onclick="processRadio()"> Min</label><br>
-    <label><input type="radio" name="operation" value="avg" onclick="processRadio()"> Average</label><br>
-    <label><input type="radio" name="operation" value="geo" onclick="processRadio()"> Geometric Mean</label><br>
-</form>
+    <!-- Creating form to fill data in fields -->
+    <form class="mb-4">
+        <div class="form-group">
+            <label for="firstNum">Enter a number:</label>
+            <input type="number" class="form-control" id="firstNum" value="2">
+        </div>
+        <div class="form-group">
+            <label for="secondNum">Enter a number:</label>
+            <input type="number" class="form-control" id="secondNum" value="12">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="powerSum()">Compute</button>
+    </form>
 
-<!-- Div for tagged element to display result of radio option-->
-<div><p id="radioResult"> </p></div>
+    <!-- Div for tagged element to display power of entered numbers -->
+    <div class="alert alert-info">
+        <p id="formResult"></p>
+    </div>
+
+    <h4 class="text-center">Math Computations - Radio button</h4>
+    <form>
+        <div class="form-group">
+            <label><input type="radio" name="operation" value="max" onclick="processRadio()"> Max</label><br>
+            <label><input type="radio" name="operation" value="min" onclick="processRadio()"> Min</label><br>
+            <label><input type="radio" name="operation" value="avg" onclick="processRadio()"> Average</label><br>
+            <label><input type="radio" name="operation" value="geo" onclick="processRadio()"> Geometric Mean</label><br>
+        </div>
+    </form>
+
+    <!-- Div for tagged element to display result of radio option-->
+    <div class="alert alert-info">
+        <p id="radioResult"></p>
+    </div>
+</div>
 
 <script>
-
 function powerSum() {
     let first = parseInt(document.getElementById("firstNum").value);
     let second = parseInt(document.getElementById("secondNum").value);
@@ -74,10 +90,7 @@ function processRadio() {
     document.getElementById("radioResult").innerHTML = 
         `Computed ${operationName} with values ${first} and ${second} result is ${result}`;
 }
-
-
-
 </script>
 
 </body>
-</html> 
+</html>

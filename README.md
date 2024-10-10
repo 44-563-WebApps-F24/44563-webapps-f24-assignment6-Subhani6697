@@ -4,8 +4,8 @@ Java Script introduction
 <br>
 Hosted at 
 <br>
-[Click here...for Color Gess](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment6-Subhani6697/guessit.html)
+[Color Gess](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment6-Subhani6697/guessit.html)
 <br>
-[Click here...for Math Calc](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment6-Subhani6697/math.html)
+[Math Calc](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment6-Subhani6697/math.html)
 <br>
-[Click here...for My Lunch](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment6-Subhani6697/lunch.html)
+[My Lunch](https://44-563-webapps-f24.github.io/44563-webapps-f24-assignment6-Subhani6697/lunch.html)
